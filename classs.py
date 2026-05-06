@@ -8,12 +8,19 @@ class Student:
     def Student_Marks_Average(self, marks):
         avg = 0
         sum = 0
+
         for i in marks:
             sum = sum + i
-        
-        avg = sum / i
-        print(avg)
+
+        self.avg = sum / i
+
+    def welcome(self):
+        print("Welcome", self.name, "Your Average of Marks is", self.avg)
+
+
+
 
 
 s1 = Student()
 s1.Student_Marks_Average([1, 2, 3, 4])
+s1.welcome()
