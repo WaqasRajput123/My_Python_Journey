@@ -1,4 +1,5 @@
-num = int(input("Enter a number: "))
+import datetime
 
-for i in range(1, num + 1):
-    print(i)
+dateAndtime = datetime.datetime.now()
+
+print(dateAndtime)
